@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35527.113
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceChecker", "PerformanceChecker\PerformanceChecker.csproj", "{0C9D3CA7-65A7-4881-A639-02D597FD0FEE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PerformanceChecker.Benchmark", "PerformanceChecker.Benchmark\PerformanceChecker.Benchmark.csproj", "{B1F354FF-0A5A-4B7A-AF5B-ADC71A116A07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0C9D3CA7-65A7-4881-A639-02D597FD0FEE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0C9D3CA7-65A7-4881-A639-02D597FD0FEE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0C9D3CA7-65A7-4881-A639-02D597FD0FEE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0C9D3CA7-65A7-4881-A639-02D597FD0FEE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B1F354FF-0A5A-4B7A-AF5B-ADC71A116A07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1F354FF-0A5A-4B7A-AF5B-ADC71A116A07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1F354FF-0A5A-4B7A-AF5B-ADC71A116A07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1F354FF-0A5A-4B7A-AF5B-ADC71A116A07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
