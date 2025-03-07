@@ -1,4 +1,5 @@
 ﻿using BenchmarkDotNet.Attributes;
+using System;
 using System.Xml;
 
 namespace PerformanceChecker.Benchmark.Benchmarks
@@ -58,6 +59,15 @@ namespace PerformanceChecker.Benchmark.Benchmarks
                 _xml.IndexOf($"<{ElementName}>") + $"<{ElementName}>".Length, 
                 _xml.IndexOf($"</{ElementName}>") - _xml.IndexOf($"<{ElementName}>") - $"<{ElementName}>".Length
                 );
+        }
+
+        [Benchmark]
+        public string ReadDataUsingSpan()
+        {
+            ReadOnlySpan<char> xmlSpan = _xml.AsSpan();
+            int startIndex = xmlSpan.IndexOf($"<{ElementName}>".AsSpan(), StringComparison.Ordinal) + $"<{ElementName}>".Length;
+            int endIndex = xmlSpan.IndexOf($"</{ElementName}>".AsSpan(), StringComparison.Ordinal);
+            return xmlSpan[startIndex..endIndex].ToString();
         }
 
         [Benchmark]
